@@ -10,6 +10,7 @@
  */
 
 define( 'OTGS_FB_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
+define( 'OTGS_FB_PLUGIN_PATH', __DIR__ );
 
 load_plugin_textdomain( 'otgs-fb', false, basename( __DIR__ ) . '/languages' );
 
