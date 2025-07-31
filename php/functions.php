@@ -3,8 +3,8 @@
 add_action( 'admin_menu', function() {
 
 	add_menu_page(
-		'Foo Banner',
-		'Foo Banner',
+		__( 'Foo Banner', 'otgs-fb' ),
+		__( 'Foo Banner', 'otgs-fb' ),
 		'manage_options',
 		'otgs-foo-banner',
 		'otgs_fb_render_admin_page'
@@ -29,26 +29,29 @@ function otgs_fb_render_admin_page() {
 
 	?>
 	<div class="wrap">
-		<h1>Foo Banner</h1>
+		<h1><?php esc_html_e( 'Foo Banner', 'otgs-fb' ) ?></h1>
 		<form method="post">
 			<?php wp_nonce_field( 'otgs-foo-banner' ); ?>
 			<p>
 				<label for="active">
-					Active
+					<?php esc_html_e( 'Active', 'otgs-fb' ) ?>
 					<input type="checkbox" name="active" value="1" <?php checked( (bool) $options['active'] ) ?>/>
 					<?php if ( null !== $options['active_since'] ) : ?>
-						<i>Active since <?php echo esc_html( human_time_diff( $options['active_since'] ) ) ?> ago.</i>
+						<i><?php
+							/* translators: %s is a time interval (e.g."7 mins") */
+							printf( esc_html__( 'Active since %s ago.', 'otgs-fb' ), human_time_diff( $options['active_since'] ) )
+						?></i>
 					<?php endif; ?>
 				</label>
 			</p>
 			<p>
 				<label for="content">
-					Banner's content
+				<?php esc_html_e( "Banner's content", 'otgs-fb' ) ?>
 					<input type="text" name="content" value="<?php echo esc_attr( $options['content'] ) ?>" />
 				</label>
 			</p>
 			<p>
-				<button id="otgs-fb-save" name="otgs-fb-save" class="button button-primary">Save</button>
+				<button id="otgs-fb-save" name="otgs-fb-save" class="button button-primary"><?php esc_html_e( 'Save', 'otgs-fb' ) ?></button>
 			</p>
 		</form>
 	</div>
@@ -88,5 +91,5 @@ function otgs_fb_get_options() {
 }
 
 add_action( 'admin_enqueue_scripts', function() {
-	wp_enqueue_script( 'otgs-fb-confirm', OTGS_FB_PLUGIN_URL . '/js/confirm.js' );
+	wp_enqueue_script( 'otgs-fb-confirm', OTGS_FB_PLUGIN_URL . '/js/confirm.js', [ 'wp-i18n' ] );
 } );

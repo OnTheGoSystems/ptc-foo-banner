@@ -6,6 +6,7 @@
  * Author: OnTheGoSystems
  * Author URI: http://www.onthegosystems.com/
  * Version: 1.0.0
+ * Text Domain: otgs-fb
  */
 
 define( 'OTGS_FB_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
