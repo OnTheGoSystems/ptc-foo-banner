@@ -11,4 +11,6 @@
 
 define( 'OTGS_FB_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 
+load_plugin_textdomain( 'otgs-fb', false, basename( __DIR__ ) . '/languages' );
+
 require_once __DIR__ . '/php/functions.php';
