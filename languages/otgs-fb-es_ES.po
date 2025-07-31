@@ -1,0 +1,68 @@
+# Copyright (C) 2025 OnTheGoSystems
+# This file is distributed under the same license as the OTGS Foo Banner plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: OTGS Foo Banner 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ptc-foo-banner\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-31T17:14:19+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: otgs-fb\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "OTGS Foo Banner"
+msgstr "OTGS Foo Banner"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://wpml.org/"
+msgstr "https://wpml.org/"
+
+#. Description of the plugin
+#: plugin.php
+msgid "This plugin shows a banner on the frontend header, but the purpose is to show the steps to internationalize (i18n) and localize (l10n) a WordPress plugin."
+msgstr "Este plugin muestra un banner en la cabecera del frontend, pero su propósito es mostrar los pasos para internacionalizar (i18n) y localizar (l10n) un plugin de WordPress."
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#: php/functions.php:6
+#: php/functions.php:7
+#: php/functions.php:32
+msgid "Foo Banner"
+msgstr "Foo banner"
+
+#: php/functions.php:37
+msgid "Active"
+msgstr "Activo"
+
+#. translators: %s is a time interval (e.g."7 mins")
+#: php/functions.php:42
+#, php-format
+msgid "Active since %s ago."
+msgstr "Activo desde hace %s."
+
+#: php/functions.php:49
+msgid "Banner's content"
+msgstr "Contenido del banner"
+
+#: php/functions.php:54
+msgid "Save"
+msgstr "Guardar"
+
+#: js/confirm.js:7
+msgid "Saving will reset the active time count."
+msgstr "Al guardar se reiniciará el contador de tiempo activo."
