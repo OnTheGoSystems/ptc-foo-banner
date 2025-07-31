@@ -5,5 +5,8 @@
     "require": {},
     "require-dev": {
         "wp-cli/wp-cli-bundle": "^2.12"
+    },
+    "scripts": {
+        "make-pot": "./vendor/bin/wp i18n make-pot . languages/otgs-fb.pot"
     }
 }
