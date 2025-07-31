@@ -3,5 +3,7 @@
     "description": "This plugin shows a banner on the frontend header, but the purpose is to show the steps to internationalize (i18n) and localize (l10n) a WordPress plugin.",
     "type": "wordpress-plugin",
     "require": {},
-    "require-dev": {}
+    "require-dev": {
+        "wp-cli/wp-cli-bundle": "^2.12"
+    }
 }
